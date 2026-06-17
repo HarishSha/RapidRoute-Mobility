@@ -1,0 +1,6 @@
+@import "variables.css";
+
+/* Your new styles go here */
+.new-feature {
+  background-color: var(--blue-light);
+}

@@ -34,7 +34,7 @@ window.addEventListener("scroll", () => {
   navLinks.forEach((a) => {
     a.style.color =
       a.getAttribute("href") === "#" + current
-        ? "var(--orange)"
+        ? "var(--orange-light)"
         : "rgba(255,255,255,0.85)";
   });
 });
