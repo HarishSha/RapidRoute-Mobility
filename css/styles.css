@@ -187,20 +187,28 @@ nav {
 /* ── HERO ── */
 .hero {
   min-height: 92vh;
-  background: url("../images/4.jpg") center / cover no-repeat;
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(29, 28, 28, 0.3) 50%,
+      rgb(91 83 83 / 75%) 100%
+    ),
+    url(../images/4.jpg) center / cover no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   justify-content: flex-start;
-  padding: 20px 40px 10px;
+  padding: 20px 40px 40px;
   position: relative;
   overflow: hidden;
   margin-top: 70px;
 }
 
 .hero figure {
-  width: 18em;
+  width: 22em;
 }
 
 .hero-badge {
@@ -217,7 +225,6 @@ nav {
   padding: 2px 16px;
   border-radius: 50px;
   margin-bottom: 28px;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
 }
 .hero-badge span {
   width: 6px;
@@ -246,16 +253,17 @@ nav {
   margin-bottom: 20px;
   max-width: 820px;
   font-size: 2rem;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 1px 1px var(--off-white);
 }
 .hero h1 .accent {
   color: var(--orange-light);
 }
 .hero p {
-  font-size: clamp(0.8rem, 1.8vw, 1rem);
+  font-size: 1.2rem;
   max-width: 600px;
   line-height: 1.7;
   margin-bottom: 40px;
+  font-weight: 500;
   /* text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); */
 }
 .hero-btns {
@@ -317,9 +325,9 @@ nav {
   align-items: center;
   gap: 8px;
   background: var(--off-white);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  border: 1px solid var(--orange);
   color: var(--blue);
-  font-size: 0.82rem;
+  font-size: 1rem;
   font-weight: 600;
   padding: 9px 18px;
   border-radius: 50px;
@@ -388,7 +396,7 @@ section {
   margin-bottom: 14px;
 }
 .section-sub {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: var(--gray-text);
   line-height: 1.7;
   max-width: 600px;
@@ -411,7 +419,7 @@ section {
   align-items: center;
 }
 .about-text p {
-  font-size: 0.97rem;
+  font-size: 1rem;
   color: var(--gray-text);
   line-height: 1.75;
   margin-bottom: 18px;
@@ -445,13 +453,13 @@ section {
   flex-shrink: 0;
 }
 .about-card h4 {
-  font-size: 0.82rem;
+  font-size: 1.2rem;
   font-weight: 700;
   color: var(--blue);
   margin-bottom: 2px;
 }
 .about-card p {
-  font-size: 0.75rem;
+  font-size: 1rem;
   color: var(--gray-text);
   line-height: 1.45;
 }
@@ -481,7 +489,7 @@ section {
   position: relative;
 }
 .about-visual .tagline {
-  font-size: 0.85rem;
+  font-size: 1.2rem;
   color: rgba(255, 255, 255, 0.7);
   margin-bottom: 28px;
   position: relative;
@@ -494,7 +502,7 @@ section {
   display: flex;
   align-items: center;
   gap: 10px;
-  font-size: 0.88rem;
+  font-size: 1rem;
   padding: 10px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -553,13 +561,13 @@ section {
   margin-bottom: 14px;
 }
 .service-card h3 {
-  font-size: 0.93rem;
+  font-size: 1.3rem;
   font-weight: 700;
   color: var(--blue);
   margin-bottom: 6px;
 }
 .service-card p {
-  font-size: 0.9rem;
+  font-size: 1 rem;
   color: var(--gray-text);
   line-height: 1.55;
 }
@@ -602,13 +610,13 @@ section {
   color: white;
 }
 .why-card h3 {
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   font-weight: 700;
   color: var(--blue);
   margin-bottom: 5px;
 }
 .why-card p {
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: var(--gray-text);
   line-height: 1.55;
 }
@@ -658,13 +666,13 @@ section {
   box-shadow: 0 4px 16px rgba(244, 121, 32, 0.25);
 }
 .process-step h3 {
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   font-weight: 700;
   color: var(--blue);
   margin-bottom: 6px;
 }
 .process-step p {
-  font-size: 0.78rem;
+  font-size: 1rem;
   color: var(--gray-text);
   line-height: 1.5;
 }
@@ -710,18 +718,18 @@ section {
   align-items: center;
   justify-content: center;
   font-family: "Poppins", sans-serif;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 800;
   color: white;
 }
 .auto-card h3 {
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   font-weight: 700;
   color: white;
   margin-bottom: 6px;
 }
 .auto-card p {
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: rgba(255, 255, 255, 0.65);
   line-height: 1.55;
 }
@@ -744,7 +752,7 @@ section {
   padding: 28px 26px;
 }
 .compliance-box h3 {
-  font-size: 0.82rem;
+  font-size: 1.2rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -762,7 +770,7 @@ section {
   background: rgba(26, 60, 110, 0.07);
   border: 1px solid rgba(26, 60, 110, 0.15);
   color: var(--blue);
-  font-size: 0.78rem;
+  font-size: 1rem;
   font-weight: 600;
   padding: 6px 14px;
   border-radius: 6px;
@@ -858,6 +866,7 @@ section {
   align-items: center;
   justify-content: center;
   font-size: 1.8rem;
+  color: white;
 }
 .contact-banner-content h4 {
   font-family: "Poppins", sans-serif;
