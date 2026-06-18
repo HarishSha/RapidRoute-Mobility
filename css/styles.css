@@ -80,6 +80,7 @@
 }
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 70px;
 }
 body {
   font-family: "Inter", sans-serif;
@@ -191,9 +192,9 @@ nav {
   background:
     linear-gradient(
       to bottom,
-      rgba(0, 0, 0, 0) 0%,
-      rgba(29, 28, 28, 0.3) 50%,
-      rgb(91 83 83 / 75%) 100%
+      rgb(255 255 255 / 0%) 0%,
+      rgb(255 255 255 / 16%) 50%,
+      rgb(42 40 40 / 33%) 100%
     ),
     url(../images/4.jpg) center / cover no-repeat;
   display: flex;
@@ -384,7 +385,7 @@ section {
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--orange-light);
+  color: var(--orange);
   margin-bottom: 10px;
 }
 .section-title {
@@ -525,15 +526,7 @@ section {
 
 /* ── SERVICES ── */
 .services {
-  background:
-    linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
-    url("../images/1.jpg") center / cover no-repeat;
-}
-.services .section-title {
-  color: white;
-}
-.services .section-sub {
-  color: rgba(255, 255, 255, 0.85);
+  background: url("../images/1.jpg") center / cover no-repeat;
 }
 .services-grid {
   display: grid;
@@ -884,7 +877,7 @@ section {
   margin-bottom: 8px;
 }
 .contact-banner-content p {
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   /* color: var(--blue); */
   line-height: 1.5;
 }
@@ -1051,6 +1044,17 @@ footer {
   .process-steps {
     flex-direction: column;
     gap: 24px;
+  }
+  .services {
+    background:
+      linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+      url("../images/1.jpg") center / cover no-repeat;
+  }
+  .services .section-title {
+    color: white;
+  }
+  .services .section-sub {
+    color: rgba(255, 255, 255, 0.85);
   }
   .process-steps::before {
     display: none;
