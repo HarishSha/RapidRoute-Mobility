@@ -316,7 +316,7 @@ nav {
 }
 .hero-pills {
   display: flex;
-  gap: 16px;
+  gap: 12px 16px;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -525,7 +525,15 @@ section {
 
 /* ── SERVICES ── */
 .services {
-  background: url("../images/1.jpg") center / cover no-repeat;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url("../images/1.jpg") center / cover no-repeat;
+}
+.services .section-title {
+  color: white;
+}
+.services .section-sub {
+  color: rgba(255, 255, 255, 0.85);
 }
 .services-grid {
   display: grid;
@@ -1048,7 +1056,11 @@ footer {
     display: none;
   }
   section {
-    padding: 60px 20px;
+    padding: 80px 24px;
+  }
+  .hero {
+    min-height: auto;
+    padding-bottom: 80px;
   }
   .footer-top {
     gap: 28px;
