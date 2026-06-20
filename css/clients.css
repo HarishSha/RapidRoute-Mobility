@@ -1,0 +1,387 @@
+@import "variables.css";
+
+/* ----- */
+
+/* .clients {
+  background: var(--off-white);
+} */
+
+.clients-section {
+  position: relative;
+  padding: 20px 4px;
+  overflow: hidden;
+  padding: 64px 24px 30px;
+  background: linear-gradient(
+    160deg,
+    var(--gray-light) 0%,
+    var(--off-white) 60%,
+    var(--white) 100%
+  );
+}
+
+.clients-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(
+      ellipse 80% 50% at 75% -10%,
+      rgba(26, 60, 110, 0.06) 0%,
+      transparent 70%
+    ),
+    radial-gradient(
+      ellipse 50% 40% at 10% 110%,
+      rgba(244, 121, 32, 0.05) 0%,
+      transparent 60%
+    );
+  pointer-events: none;
+}
+
+/* ── Header row ── */
+.clients-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto 48px;
+}
+
+.clients-header-left {
+  flex: 1;
+  min-width: 260px;
+}
+
+.clients-eyebrow {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--orange-light);
+  margin: 0 0 6px;
+}
+
+.clients-headline {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 900;
+  line-height: 1.1;
+  margin: 0 0 10px;
+  color: var(--blue);
+}
+
+.clients-headline .hl-accent {
+  color: var(--orange-light);
+}
+
+.clients-subline {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--gray-text);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.clients-subline::before,
+.clients-subline::after {
+  content: "";
+  width: 36px;
+  height: 2px;
+  background: var(--orange-light);
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.clients-body {
+  font-size: 1rem;
+  color: var(--gray-text);
+  max-width: 480px;
+  line-height: 1.75;
+  margin: 0;
+}
+
+.clients-badge {
+  flex-shrink: 0;
+  max-width: 250px;
+}
+
+.trust-section {
+  background: linear-gradient(
+    160deg,
+    var(--gray-light) 0%,
+    var(--off-white) 60%,
+    var(--white) 100%
+  );
+  padding: 0 24px 48px;
+}
+
+/* ── Pill heading ── */
+.trust-pill-row {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  max-width: 1200px;
+  margin: 0 auto 0;
+  position: relative;
+  top: 20px;
+}
+
+.trust-pill-row::before,
+.trust-pill-row::after {
+  content: "";
+  flex: 1;
+}
+
+.trust-pill {
+  background: var(--blue);
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  padding: 10px 28px;
+  border-radius: 40px;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 4px 16px rgba(26, 60, 110, 0.25);
+  position: relative;
+  z-index: 1;
+}
+
+/* Dot accents on each end of the line */
+.trust-pill-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--blue);
+  flex-shrink: 0;
+}
+
+/* ── Items strip ── */
+.trust-strip {
+  background: var(--white);
+  border-radius: 16px;
+  box-shadow: 0 6px 32px rgba(26, 60, 110, 0.1);
+  border: 1px solid var(--border);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+/* Each item */
+.trust-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  /* text-align: center; */
+  padding: 0 8px;
+  position: relative;
+}
+
+/* Vertical divider between items */
+.trust-item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: -1px;
+  top: 10%;
+  height: 80%;
+  width: 1px;
+  background: var(--border);
+}
+
+.trust-icon-wrap {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  color: var(--white);
+  flex-shrink: 0;
+}
+
+.ti-blue {
+  background: var(--blue);
+}
+.ti-orange {
+  background: var(--orange-light);
+}
+
+.trust-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--blue);
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .trust-item:not(:last-child)::after {
+    display: none;
+  }
+  .trust-pill {
+    font-size: 11px;
+    padding: 8px 16px;
+    letter-spacing: 0.6px;
+  }
+}
+
+/* ── Pill section labels ── */
+.clients-pill-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  max-width: 1200px;
+  margin: 0 auto 28px;
+}
+
+.clients-pill-row::before,
+.clients-pill-row::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+
+.clients-pill {
+  background: var(--blue);
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 8px 22px;
+  border-radius: 40px;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* ── Client logo cards — layout handled by Bulma columns ── */
+.clients-grid-wrap {
+  max-width: 1200px;
+  margin: 0 auto 52px;
+}
+
+.client-card {
+  /* background: var(--white); */
+  /* border: 1.5px solid var(--border); */
+  /* border-radius: 12px; */
+  /* box-shadow: 0 4px 20px rgba(26, 60, 110, 0.09); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  overflow: hidden;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+}
+
+.client-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 28px rgba(26, 60, 110, 0.16);
+}
+
+/* Logo image placeholder */
+.client-logo-area {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.client-logo-area img {
+  max-width: 100%;
+  max-height: 68px;
+  object-fit: contain;
+}
+
+.client-name-tag {
+  width: 100%;
+  padding: 7px 8px;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: var(--white);
+  line-height: 1.3;
+}
+
+.tag-blue {
+  background: var(--blue);
+}
+.tag-orange {
+  background: var(--orange-light);
+}
+.tag-teal {
+  background: var(--teal);
+}
+
+/* ── Tagline banner ── */
+.tagline-banner {
+  background: var(--blue);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  border-radius: 1rem;
+  border-top: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.tagline-arrow {
+  color: var(--orange-light);
+  font-size: 20px;
+}
+
+.tagline-text {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  text-align: center;
+  margin: 0;
+}
+
+.tagline-text em {
+  font-style: normal;
+  color: var(--orange-light);
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .clients-section {
+    padding: 48px 16px 0;
+  }
+  .client-card {
+    width: 148px;
+  }
+  .trust-item {
+    width: 92px;
+  }
+  .clients-badge {
+    display: none;
+  }
+  .vehicle-strip {
+    padding: 20px 16px;
+    gap: 16px;
+  }
+}
