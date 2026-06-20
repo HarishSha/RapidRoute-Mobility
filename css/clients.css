@@ -203,13 +203,13 @@
 }
 
 .trust-icon-wrap {
-  width: 58px;
-  height: 58px;
+  width: 2.5em;
+  height: 2.5em;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 22px;
+  font-size: 1rem;
   color: var(--white);
   flex-shrink: 0;
 }
@@ -349,9 +349,10 @@
   align-items: center;
   justify-content: center;
   gap: 14px;
-  flex-wrap: wrap;
   border-radius: 1rem;
   border-top: 2px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 20px;
+  flex-wrap: nowrap;
 }
 
 .tagline-arrow {
