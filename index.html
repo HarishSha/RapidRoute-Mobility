@@ -29,124 +29,135 @@
     ></script>
   </head>
   <body>
-    <!-- NAV -->
     <nav id="navbar">
       <a class="nav-logo" href="#home">
-        <img src="./images/logo.png" alt="RapidRoute Mobility Logo" />
-        <span
-          >Rapid<em>Route</em>
-          <span
-            style="
-              font-size: 0.7em;
-              font-weight: 500;
-              display: block;
-              color: rgba(255, 255, 255, 0.65);
-              letter-spacing: 0.12em;
-            "
-            >MOBILITY</span
-          ></span
-        >
+        <img src="./images/logo-with-name.png" alt="RapidRoute Mobility" />
       </a>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About Us</a></li>
         <li><a href="#services">Services</a></li>
-        <li><a href="#why-us">Why Us</a></li>
-        <li><a href="#process">Process</a></li>
-        <li><a href="#compliance">Compliance</a></li>
-        <li><a href="#clients">Clients</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#fleet">Fleet</a></li>
+        <li><a href="#compliance">Safety</a></li>
+        <li><a href="#clients">Careers</a></li>
+        <li><a href="#contact">Contact Us</a></li>
       </ul>
-      <a class="nav-cta" href="#contact">Get a Quote</a>
+
+      <a class="nav-cta" href="tel:+919910012345">
+        <i class="fa-solid fa-phone"></i>
+        +91 99100 12345
+      </a>
+
       <button class="hamburger" id="hamburger" aria-label="Menu">
         <span></span><span></span><span></span>
       </button>
     </nav>
 
-    <!-- HERO -->
     <section class="hero" id="home">
-      <div class="is-block mt-6 pb-2">
-        <figure class="image">
-          <img src="./images/logo-with-name.png" alt="RapidRoute" />
-        </figure>
-      </div>
-      <div class="hero-badge mt-3">
-        <span></span> Delhi NCR's Trusted Fleet Partner
-      </div>
-      <h1 class="mb-3">
-        <span class="color-blue">Driven by</span>
-        <span class="color-orange">Commitment.</span>
-        <span class="color-blue">Powered by</span>
-        <span class="color-orange">Reliability.</span>
-      </h1>
-      <p class="color-blue">
-        RapidRoute Mobility delivers safe, on-time, and technology-enabled
-        ground transportation for corporates, hotels, BPOs, and events across
-        Delhi NCR.
-      </p>
+      <!-- Background image -->
+      <div class="hero-bg"></div>
 
-      <div class="hero-pills mt-auto">
-        <div class="pill">
-          <svg
-            width="14"
-            height="14"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2.5"
-          >
-            <path
-              d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"
-            />
-            <circle cx="12" cy="10" r="3" />
-          </svg>
-          Delhi NCR Operations
-        </div>
-        <div class="pill">
-          <svg
-            width="14"
-            height="14"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2.5"
-          >
-            <path d="M12 2L2 7l10 5 10-5-10-5z" />
-            <path d="M2 17l10 5 10-5" />
-            <path d="M2 12l10 5 10-5" />
-          </svg>
-          20+ Years Experience
-        </div>
-        <div class="pill">
-          <svg
-            width="14"
-            height="14"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2.5"
-          >
-            <circle cx="12" cy="12" r="10" />
-            <polyline points="12 6 12 12 16 14" />
-          </svg>
-          24×7 Support
-        </div>
-        <div class="pill">
-          <svg
-            width="14"
-            height="14"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2.5"
-          >
-            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-          </svg>
-          100% Compliant
+      <!-- Left text content -->
+      <div class="hero-content">
+        <h1>
+          Corporate Mobility<br />
+          Solutions <span class="accent">Across India</span>
+        </h1>
+        <div class="hero-underline"></div>
+        <p class="hero-tagline">Safe. Reliable. Technology-Driven.</p>
+        <p class="hero-sub">
+          Transportation services that keep your business moving — every day,
+          every mile.
+        </p>
+        <div class="hero-btns">
+          <a class="btn-primary" href="#contact">
+            <i class="fa-solid fa-circle-arrow-right"></i>
+            Get a Quote
+          </a>
+          <a class="btn-secondary" href="#services">
+            <i class="fa-solid fa-circle-arrow-right"></i>
+            Explore Services
+          </a>
         </div>
       </div>
-      <div class="hero-btns mt-4">
-        <a class="btn-primary" href="#contact">Request a Quote</a>
-        <a class="btn-secondary" href="#services">Our Services</a>
+
+      <!-- Service icons strip -->
+      <div class="hero-services-strip">
+        <div class="hero-services-inner">
+          <div class="hero-service-item">
+            <div class="hero-service-icon">
+              <i class="fa-solid fa-user-group"></i>
+            </div>
+            <span class="hero-service-label"
+              >Employee<br />Transportation<br />Services (ETS)</span
+            >
+          </div>
+
+          <div class="hero-service-item">
+            <div class="hero-service-icon">
+              <i class="fa-solid fa-plane-departure"></i>
+            </div>
+            <span class="hero-service-label">Airport<br />Transfers</span>
+          </div>
+
+          <div class="hero-service-item">
+            <div class="hero-service-icon">
+              <i class="fa-solid fa-briefcase"></i>
+            </div>
+            <span class="hero-service-label"
+              >Business &amp;<br />Corporate Travel</span
+            >
+          </div>
+
+          <div class="hero-service-item">
+            <div class="hero-service-icon">
+              <i class="fa-solid fa-car-side"></i>
+            </div>
+            <span class="hero-service-label"
+              >EV Transportation<br />Solutions</span
+            >
+          </div>
+
+          <div class="hero-service-item">
+            <div class="hero-service-icon">
+              <i class="fa-solid fa-bus"></i>
+            </div>
+            <span class="hero-service-label"
+              >AC Coaches &amp;<br />Tempo Travellers</span
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Trust pills strip -->
+      <div class="hero-trust-strip">
+        <div class="hero-trust-inner">
+          <div class="hero-trust-item">
+            <i class="fa-solid fa-shield-halved"></i>
+            Safe &amp; Secure
+          </div>
+          <div class="hero-trust-divider"></div>
+          <div class="hero-trust-item">
+            <i class="fa-regular fa-clock"></i>
+            On-Time Every Time
+          </div>
+          <div class="hero-trust-divider"></div>
+          <div class="hero-trust-item">
+            <i class="fa-solid fa-microchip"></i>
+            Technology-Enabled
+          </div>
+          <div class="hero-trust-divider"></div>
+          <div class="hero-trust-item">
+            <i class="fa-solid fa-id-card"></i>
+            Trained &amp; Verified Drivers
+          </div>
+          <div class="hero-trust-divider"></div>
+          <div class="hero-trust-item">
+            <i class="fa-solid fa-leaf"></i>
+            Sustainable Mobility
+          </div>
+        </div>
       </div>
     </section>
 
@@ -286,7 +297,7 @@
           <div class="section-inner">
             <!-- Row 1 -->
             <div class="columns is-variable is-4 is-multiline">
-              <div class="column is-one-fifth-desktop is-half-tablet">
+              <div class="column is-one-quarter-tablet">
                 <div class="service-card sv-blue">
                   <div class="service-img">
                     <img
@@ -307,7 +318,7 @@
                 </div>
               </div>
 
-              <div class="column is-one-fifth-desktop is-half-tablet">
+              <div class="column is-one-quarter-tablet">
                 <div class="service-card sv-orange">
                   <div class="service-img">
                     <img
@@ -328,7 +339,7 @@
                 </div>
               </div>
 
-              <div class="column is-one-fifth-desktop is-half-tablet">
+              <div class="column is-one-quarter-tablet">
                 <div class="service-card sv-blue">
                   <div class="service-img">
                     <img
@@ -349,7 +360,7 @@
                 </div>
               </div>
 
-              <div class="column is-one-fifth-desktop is-half-tablet">
+              <div class="column is-one-quarter-tablet">
                 <div class="service-card sv-green">
                   <div class="service-img">
                     <img
@@ -372,7 +383,7 @@
                 </div>
               </div>
 
-              <div class="column is-one-fifth-desktop is-half-tablet">
+              <div class="column is-one-quarter-tablet">
                 <div class="service-card sv-purple">
                   <div class="service-img">
                     <img
@@ -393,7 +404,7 @@
                 </div>
               </div>
 
-              <div class="column is-one-fifth-desktop is-half-tablet">
+              <div class="column is-one-quarter-tablet">
                 <div class="service-card sv-blue">
                   <div class="service-img">
                     <img
@@ -416,7 +427,7 @@
                 </div>
               </div>
 
-              <div class="column is-one-fifth-desktop is-half-tablet">
+              <div class="column is-one-quarter-tablet">
                 <div class="service-card sv-orange">
                   <div class="service-img">
                     <img
@@ -437,7 +448,7 @@
                 </div>
               </div>
 
-              <div class="column is-one-fifth-desktop is-half-tablet">
+              <div class="column is-one-quarter-tablet">
                 <div class="service-card sv-teal">
                   <div class="service-img">
                     <img
@@ -453,45 +464,6 @@
                     <p class="service-desc">
                       Smart technology solutions for efficient fleet management
                       and operations.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="column is-one-fifth-desktop is-half-tablet">
-                <div class="service-card sv-green">
-                  <div class="service-img">
-                    <img src="images/services/school.png" alt="School Fleet" />
-                    <div class="service-badge">
-                      <i class="fa-solid fa-school"></i>
-                    </div>
-                  </div>
-                  <div class="service-body">
-                    <h3 class="service-title">School Fleet</h3>
-                    <p class="service-desc">
-                      Safe, reliable and timely transportation for students and
-                      staff.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="column is-one-fifth-desktop is-half-tablet">
-                <div class="service-card sv-purple">
-                  <div class="service-img">
-                    <img
-                      src="images/services/leisure.png"
-                      alt="Leisure Travels"
-                    />
-                    <div class="service-badge">
-                      <i class="fa-solid fa-umbrella-beach"></i>
-                    </div>
-                  </div>
-                  <div class="service-body">
-                    <h3 class="service-title">Leisure Travels</h3>
-                    <p class="service-desc">
-                      Relax and enjoy your journey with our comfortable and
-                      hassle-free travel services.
                     </p>
                   </div>
                 </div>
@@ -1284,7 +1256,6 @@
             <li><a href="#services">Fleet Management</a></li>
             <li><a href="#services">EV Transportation</a></li>
             <li><a href="#services">Outstation Tours</a></li>
-            <li><a href="#services">School Fleet</a></li>
           </ul>
         </div>
         <div class="footer-col">

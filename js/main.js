@@ -38,3 +38,11 @@ window.addEventListener("scroll", () => {
         : "rgba(255,255,255,0.85)";
   });
 });
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 10) {
+    navbar.classList.add("scrolled");
+  } else {
+    navbar.classList.remove("scrolled");
+  }
+});
