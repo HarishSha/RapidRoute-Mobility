@@ -26,23 +26,25 @@ function handleSubmit() {
 // Smooth nav highlight on scroll
 const sections = document.querySelectorAll("section[id], div[id]");
 const navLinks = document.querySelectorAll(".nav-links a");
+// Combine both scroll listeners into one
 window.addEventListener("scroll", () => {
-  let current = "";
-  sections.forEach((s) => {
-    if (window.scrollY >= s.offsetTop - 100) current = s.id;
-  });
-  navLinks.forEach((a) => {
-    a.style.color =
-      a.getAttribute("href") === "#" + current
-        ? "var(--orange-light)"
-        : "rgba(255,255,255,0.85)";
-  });
-});
-
-window.addEventListener("scroll", () => {
+  // Navbar background
   if (window.scrollY > 10) {
     navbar.classList.add("scrolled");
   } else {
     navbar.classList.remove("scrolled");
   }
+
+  // Active link
+  let current = "";
+  sections.forEach((s) => {
+    if (window.scrollY >= s.offsetTop - 100) current = s.id;
+  });
+
+  navLinks.forEach((a) => {
+    a.classList.remove("active");
+    if (a.getAttribute("href") === "#" + current) {
+      a.classList.add("active");
+    }
+  });
 });
